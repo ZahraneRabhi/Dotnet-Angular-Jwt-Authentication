@@ -1,0 +1,18 @@
+<header class="bg-gray-800 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-white text-lg font-bold">
+      NgDotnet JWT Auth
+    </div>
+    <nav class="flex items-center space-x-4">
+      <a *ngIf="isLoggedIn" href="#" class="text-gray-300 hover:text-white">Home</a>
+      <a *ngIf="isLoggedIn" href="#" class="text-gray-300 hover:text-white">Data</a>
+      <div class="flex items-center space-x-2">
+        <span *ngIf="isLoggedIn" class="text-gray-300">{{ username }}</span>
+        <button *ngIf="!isLoggedIn" class="bg-blue-500 text-white px-3 py-1 rounded" routerLink="/auth/login">Login</button>
+        <button *ngIf="!isLoggedIn" class="bg-blue-500 text-white px-3 py-1 rounded" routerLink="/auth/register">Register</button>
+        <button *ngIf="isLoggedIn" class="bg-red-500 text-white px-3 py-1 rounded" (click)="logout()">Logout</button>
+        <button *ngIf="isLoggedIn" class="bg-red-500 text-white px-3 py-1 rounded" (click)="deleteUsers()">Delete Users</button>
+      </div>
+    </nav>
+  </div>
+</header>
