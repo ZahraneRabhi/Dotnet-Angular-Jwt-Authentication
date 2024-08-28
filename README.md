@@ -9,4 +9,5 @@ This project is a web application that uses .NET Core 8.0 for the backend API an
 
 
 ## Note
-The project is straight forward so i thought it would be unnecessary to make a whole ass README🦥.
+- Code still kinda a mess(Documentation Wise), will def make time to clean it.
+- The project is straight forward so i thought it would be unnecessary to make a whole ass README🦥.
